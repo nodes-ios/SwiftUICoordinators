@@ -68,3 +68,5 @@ The main advantage to this approach is it gives us a single source of truth for 
 It separates all navigation code out of any individual view model/view making views more reusable meaning any view can be interchanged to be a root view or presented easily anywhere. In our example we can navigate from A > B > C or straight from A > C. This allows the navigation for the push of C to use the same coordinator code. 
 
 It also allows code to be understood easier, to have navigation for a whole section of your application handled in a single place away from other logic views may have makes it easier to follow and get a grasp of exactly where and what that navigation stack can show.
+
+This was heavily inspired by point free navigation in the episode [here](https://pointfree.co/episodes/ep213-swiftui-navigation-stacks). I highly recommend it if interested in using this approach.
