@@ -2,7 +2,7 @@
 
 This demo application shows how you can use the coordinator pattern within a SwiftUI app. It is a project with a coordinator & three simple separate screens that can navigate amongst each other. 
 
-##The Coordinator
+## The Coordinator
 
 The coordinator consists of a `CoordinatorModel` class & a `Coordinator` view which acts as the root view of the app.
 The coordinator model handles all the navigation logic for the entire application amongst all screens. 
@@ -26,7 +26,7 @@ Lastly the `CoordinatorModel` needs a `rootViewModel` property. This will be the
 ```
 
 
-##The Destinations
+## The Destinations
 
 Each screen has a view and a view model. Any view model that requires navigation, tells the coordinator to handle that via a delegate set onto the viewModel. Navigation is all then handled within the coordinator instead of screens individual view models. This could also be done with closures instead of delegates if preferred. 
 
@@ -61,7 +61,7 @@ When the coordinator is called with the delgate method to handle navigation, it 
     }
 ```
 
-##The Payoff
+## The Payoff
 
 The main advantage to this approach is it gives us a single source of truth for state. We can write tests on the navigation and check the coordinators state at anytime to know exactly what is shown and what is in the navigation stack. Check out the test in the demo project for an example!
 
